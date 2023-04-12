@@ -4,7 +4,8 @@
 #include <cmath>
 using namespace std;
 
-void printPrimeFactors(int n)
+// todo copy elison and named return value optimization
+string printPrimeFactors(int n)
 {
 	string res_srt("Prime factor of ");
 	res_srt += to_string(n) + ": ";
@@ -26,7 +27,7 @@ void printPrimeFactors(int n)
 
 	res_srt += to_string(n);
 
-	cout << res_srt << endl;
+	return res_srt;
 }
 
 int main()
@@ -37,7 +38,7 @@ int main()
 
 	cout << "hello " << a << endl;
 
-	printPrimeFactors(a);
+	cout << printPrimeFactors(a) << endl;
 
 	return 0;
 }
