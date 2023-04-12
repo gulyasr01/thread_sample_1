@@ -1,2 +1,7 @@
 *.vcxproj*
 x64
+*.cproject
+*.project
+Debug
+.settings
+
