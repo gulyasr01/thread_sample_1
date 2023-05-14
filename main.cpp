@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <list>
 using namespace std;
 
 // todo copy elison and named return value optimization
@@ -32,13 +33,20 @@ string printPrimeFactors(int n)
 
 int main()
 {
-	int a;
+	int a; // for input
+	list<int> input_list;
 
-	cin >> a;
+	while (1)
+	{ 
+		cin >> a;
+
+		input_list.push_back(a);
+	}
 
 	cout << "hello " << a << endl;
 
 	cout << printPrimeFactors(a) << endl;
+	
 
 	return 0;
 }
